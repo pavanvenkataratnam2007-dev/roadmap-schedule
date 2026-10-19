@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A six-month study roadmap, weekly checklist and official government recruitment notice monitor for students.">
+  <meta name="theme-color" content="#07152e"><title>Roadmap & Schedule — Study. Prepare. Progress.</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home"><span class="brand-mark">✦</span><span>Roadmap <b>& Schedule</b><small>Plan · Study · Crack · Grow</small></span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home" data-page="home">⌂ <span>Dashboard</span></a>
+        <a class="nav-link" href="#roadmap" data-page="roadmap">◷ <span>6-Month Roadmap</span></a>
+        <a class="nav-link" href="#weekly" data-page="weekly">▦ <span>Weekly Schedule</span></a>
+        <a class="nav-link" href="#syllabus" data-page="syllabus">▤ <span>Subject Syllabus</span></a>
+        <a class="nav-link" href="#checklist" data-page="checklist">☑ <span>Study Checklist</span></a>
+        <a class="nav-link" href="#mocks" data-page="mocks">◉ <span>Mock Tests</span></a>
+        <a class="nav-link" href="#notifications" data-page="notifications">♧ <span>Notifications <i id="navBadge" class="nav-badge hidden">0</i></span></a>
+        <a class="nav-link" href="#resources" data-page="resources">↗ <span>Official Websites</span></a>
+      </nav>
+      <div class="sidebar-quote"><span>⛰</span><h3>Small steps every day lead to big results.</h3><button class="btn btn-primary btn-small" id="motivateBtn">Keep going! ↗</button></div>
+      <div class="sidebar-foot">Your goals. Your pace. Your progress.</div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="icon-btn mobile-menu" id="menuBtn" aria-label="Open menu">☰</button>
+        <div class="breadcrumb"><span class="dot"></span> YOUR STUDY WORKSPACE</div>
+        <div class="top-actions"><label class="searchbox">⌕ <input id="globalSearch" type="search" placeholder="Search topics, weeks, resources…" aria-label="Search roadmap"><kbd>Enter</kbd></label><button class="icon-btn" id="themeBtn" title="Toggle theme" aria-label="Toggle theme">☼</button><button class="icon-btn bell" id="bellBtn" title="Check notifications">♧<i id="bellBadge" class="bell-dot hidden"></i></button></div>
+      </header>
+
+      <section class="page active" id="page-home" data-title="Dashboard">
+        <section class="hero panel">
+          <div class="hero-icon">◎</div><div class="hero-copy"><p class="eyebrow">YOUR PERSONAL STUDY SYSTEM</p><h1>B.Tech 3rd Year — Government Exam Roadmap</h1><p>Six months of structured preparation, designed around college life.</p><div class="hero-meta"><span>⌖ Andhra Pradesh</span><span>▣ College 8:30 AM–5:00 PM</span><span>◷ 30–60 min commute</span><span>↗ Maths: Foundation level</span></div></div>
+          <blockquote>“Discipline today<br>builds the freedom<br>you want tomorrow.”<small>— One day at a time</small></blockquote>
+        </section>
+        <div class="stats-grid">
+          <article class="stat-card teal"><div class="stat-top"><span class="stat-icon">♜</span><span class="stat-label">TARGET EXAMS</span></div><h2>4 pathways</h2><p>APPSC · SSC · RRB · IBPS</p><a href="#resources" class="text-link">Explore official sites →</a></article>
+          <article class="stat-card purple"><div class="stat-top"><span class="stat-icon">◷</span><span class="stat-label">STUDY TARGET</span></div><h2>8–10 hrs</h2><p>Competitive study each normal week</p><a href="#weekly" class="text-link">View schedule →</a></article>
+          <article class="stat-card blue"><div class="stat-top"><span class="stat-icon">▤</span><span class="stat-label">CORE SUBJECTS</span></div><h2>5 subjects</h2><p>Maths · English · Reasoning · GA · AP GS</p><a href="#syllabus" class="text-link">View syllabus →</a></article>
+          <article class="stat-card pink"><div class="stat-top"><span class="stat-icon">◎</span><span class="stat-label">YOUR PROGRESS</span></div><h2 id="overallPercent">0%</h2><p id="overallCaption">Start with one small task</p><a href="#checklist" class="text-link">Track progress →</a></article>
+        </div>
+        <section class="panel roadmap-panel" id="roadmapPreview"><div class="section-heading"><div><p class="eyebrow">THE BIG PICTURE</p><h2>6-Month Roadmap</h2></div><a class="text-link" href="#roadmap">View all phases →</a></div><div class="timeline" id="timeline"></div><div class="month-focus" id="monthFocus"></div></section>
+        <div class="two-col">
+          <section class="panel"><div class="section-heading"><div><p class="eyebrow">STAY CONSISTENT</p><h2>Today’s priorities</h2></div><span class="date-pill" id="todayLabel"></span></div><div id="todayTasks" class="task-list"></div><button class="btn btn-secondary full-width" id="openChecklist">Open full checklist →</button></section>
+          <section class="panel"><div class="section-heading"><div><p class="eyebrow">RECRUITMENT WATCH</p><h2>Latest updates</h2></div><a class="text-link" href="#notifications">View all →</a></div><div id="latestNotifications" class="notice-list"><div class="empty-state">Checking official sources…</div></div><div class="status-line" id="monitorStatus"><span class="status-dot"></span> Connecting to update monitor…</div></section>
+        </div>
+      </section>
+
+      <section class="page" id="page-roadmap" data-title="6-Month Roadmap"><div class="page-heading"><p class="eyebrow">FROM FOUNDATIONS TO EXAM READINESS</p><h1>6-Month Roadmap</h1><p>Follow the phases in order. Adjust college-heavy weeks without abandoning the long-term plan.</p></div><div id="roadmapList" class="phase-list"></div></section>
+
+      <section class="page" id="page-weekly" data-title="Weekly Schedule"><div class="page-heading"><p class="eyebrow">A ROUTINE YOU CAN SUSTAIN</p><h1>Weekly Schedule</h1><p>Choose a day to view its sessions. Commute and rest are included.</p></div><section class="panel"><div class="day-tabs" id="dayTabs"></div><div id="daySchedule"></div></section><section class="panel note-panel"><strong>College exam override</strong><p>When a Unit 3/4/5 test, mid-2, internal, external or semester exam is near, replace competitive study blocks with college revision. Keep only a short optional recap. Your college dates are not entered yet.</p><label class="field-label" for="collegeDates">College dates / subjects</label><textarea id="collegeDates" rows="3" placeholder="Example: DBMS Unit 3 test — 24 Oct; AI mid-2 — 12 Nov"></textarea><button class="btn btn-secondary" id="saveCollegeDates">Save dates on this device</button><p class="tiny muted" id="collegeSaveStatus"></p></section></section>
+
+      <section class="page" id="page-syllabus" data-title="Subject Syllabus"><div class="page-heading"><p class="eyebrow">LEARN IN THE RIGHT ORDER</p><h1>Subject Syllabus</h1><p>Tick off each topic as you learn it. Topic coverage is a study guide, not a substitute for the official exam syllabus.</p></div><div class="filter-row"><input id="topicSearch" class="input" placeholder="Filter topics…"><select id="subjectFilter" class="input"><option value="all">All subjects</option></select><span class="muted" id="topicCount"></span></div><div id="syllabusGrid" class="syllabus-grid"></div></section>
+
+      <section class="page" id="page-checklist" data-title="Study Checklist"><div class="page-heading"><p class="eyebrow">SMALL TASKS, REAL PROGRESS</p><h1>Study Checklist</h1><p>All 26 weeks have a topic plan and completion tracking saved in this browser.</p></div><div class="checklist-toolbar"><div class="progress-summary panel"><div><span class="muted">OVERALL COMPLETION</span><h2 id="checklistPercent">0%</h2></div><div class="progress-track"><span id="checklistBar"></span></div><p id="checklistCount">0 of 0 tasks completed</p></div><button class="btn btn-secondary" id="exportProgress">Export progress JSON ↓</button></div><div id="weeklyChecklist"></div></section>
+
+      <section class="page" id="page-mocks" data-title="Mock Tests"><div class="page-heading"><p class="eyebrow">PRACTICE · ANALYZE · IMPROVE</p><h1>Mock Test Tracker</h1><p>Record attempts and review accuracy. Do not chase scores without analyzing mistakes.</p></div><section class="panel"><h2>Log a test</h2><form id="mockForm" class="form-grid"><label>Exam / subject<input class="input" name="exam" required placeholder="e.g. Quantitative Aptitude"></label><label>Date<input class="input" name="date" type="date" required></label><label>Score<input class="input" name="score" type="number" min="0" required placeholder="Correct marks"></label><label>Total marks<input class="input" name="total" type="number" min="1" required placeholder="Maximum marks"></label><label class="span-2">Mistakes to review<textarea class="input" name="notes" rows="2" placeholder="Concept gaps, calculation errors, time management…"></textarea></label><button class="btn btn-primary span-2" type="submit">Save test result</button></form></section><div class="stats-grid mock-stats"><article class="stat-card blue"><p class="stat-label">TESTS LOGGED</p><h2 id="mockTotal">0</h2></article><article class="stat-card teal"><p class="stat-label">AVERAGE SCORE</p><h2 id="mockAverage">—</h2></article><article class="stat-card purple"><p class="stat-label">AVERAGE ACCURACY</p><h2 id="mockAccuracy">—</h2></article></div><section class="panel"><div class="section-heading"><h2>Test history</h2><button class="btn btn-quiet" id="clearMocks">Clear history</button></div><div id="mockHistory" class="table-wrap"></div></section></section>
+
+      <section class="page" id="page-notifications" data-title="Notifications"><div class="page-heading"><p class="eyebrow">CHECK THE SOURCE BEFORE YOU ACT</p><h1>Recruitment Updates</h1><p>Page-change alerts are signals only. Confirm every vacancy, deadline and eligibility rule on the official notice.</p></div><div class="notice-actions"><div id="lastChecked" class="muted">Last checked: not yet checked</div><button class="btn btn-primary" id="refreshNotices">↻ Check now</button></div><div class="warning-banner">⚠ Page changes may be routine website updates, not recruitment notices. This monitor does not guarantee that every notification will be detected.</div><div id="allNotifications" class="notice-list panel"></div><section class="panel"><div class="section-heading"><h2>Monitor health</h2><span class="muted">Backend source status</span></div><div id="sourceHealth" class="source-health"></div></section></section>
+
+      <section class="page" id="page-resources" data-title="Official Websites"><div class="page-heading"><p class="eyebrow">PRIMARY SOURCES ONLY</p><h1>Official Websites</h1><p>Use these sites to verify eligibility, dates, syllabus and application instructions.</p></div><div class="resource-grid" id="resourceGrid"></div><section class="panel"><h2>Notification verification checklist</h2><div class="task-list"><label class="task-row"><input type="checkbox"> <span>Confirm the notice number and publication date.</span></label><label class="task-row"><input type="checkbox"> <span>Read qualification, age limit and relaxation rules.</span></label><label class="task-row"><input type="checkbox"> <span>Confirm application opening and closing dates.</span></label><label class="task-row"><input type="checkbox"> <span>Check the exam pattern and detailed syllabus.</span></label><label class="task-row"><input type="checkbox"> <span>Apply only through the official application portal.</span></label></div></section></section>
+
+      <footer class="footer"><span>ROADMAP & SCHEDULE</span><span>Study smart · Stay consistent · Achieve your goals</span><span id="apiHealth">Backend: checking…</span></footer>
+    </main>
+  </div>
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <div class="modal-backdrop hidden" id="motivationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><button class="modal-close" id="closeModal" aria-label="Close">×</button><div class="modal-symbol">✦</div><p class="eyebrow">A MOMENT FOR YOU</p><h2 id="modalTitle">Keep moving forward.</h2><p id="modalMessage">Every focused session is an investment in your future.</p><button class="btn btn-primary full-width" id="modalOkay">I’ll keep going</button></div></div>
+  <script src="/app.js" defer></script>
+</body></html>

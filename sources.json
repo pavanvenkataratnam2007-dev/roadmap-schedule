@@ -1,0 +1,34 @@
+[
+  {
+    "id": "appsc",
+    "name": "Andhra Pradesh Public Service Commission",
+    "type": "page",
+    "url": "https://psc.ap.gov.in/",
+    "enabled": true,
+    "note": "Official portal. Page-change monitoring is a signal to review the site, not confirmation of a new vacancy."
+  },
+  {
+    "id": "ssc",
+    "name": "Staff Selection Commission",
+    "type": "page",
+    "url": "https://ssc.gov.in/",
+    "enabled": true,
+    "note": "Official portal. Review the notice itself to confirm deadlines and eligibility."
+  },
+  {
+    "id": "rrb",
+    "name": "Railway Recruitment Boards",
+    "type": "page",
+    "url": "https://www.rrbcdg.gov.in/",
+    "enabled": true,
+    "note": "Official RRB portal. Regional RRB websites may publish separate notices."
+  },
+  {
+    "id": "ibps",
+    "name": "Institute of Banking Personnel Selection",
+    "type": "page",
+    "url": "https://www.ibps.in/",
+    "enabled": true,
+    "note": "Official portal. Check the relevant recruitment notification for dates and eligibility."
+  }
+]

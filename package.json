@@ -1,0 +1,10 @@
+{
+  "name": "roadmap-schedule",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Full-stack study roadmap and government recruitment notification monitor",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "dev": "node --watch server.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": { "express": "^4.21.2", "helmet": "^8.0.0", "node-cron": "^3.0.3", "rss-parser": "^3.13.0" }
+}
