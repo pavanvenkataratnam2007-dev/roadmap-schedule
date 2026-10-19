@@ -1,4 +1,5 @@
 # Roadmap & Schedule — Full-stack v2
+🔗 **Live Demo:** [roadmap-schedule.onrender.com](https://roadmap-schedule.onrender.com)
 
 A responsive study roadmap for students preparing for government recruitment exams alongside college. Frontend uses plain HTML/CSS/JavaScript; backend uses Node.js + Express. The backend periodically checks configured sources and records new RSS items or official-page changes. Personal checklists and mock-test records are stored locally in the visitor's browser.
 
